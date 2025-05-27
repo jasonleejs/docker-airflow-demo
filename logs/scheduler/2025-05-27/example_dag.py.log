@@ -1,0 +1,1467 @@
+[2025-05-27T20:25:33.146+0000] {processor.py:157} INFO - Started process (PID=166) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:25:33.149+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:25:33.153+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:25:33.152+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:25:33.187+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:25:33.183+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:25:33.188+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:25:33.268+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.128 seconds
+[2025-05-27T20:26:03.649+0000] {processor.py:157} INFO - Started process (PID=172) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:26:03.651+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:26:03.653+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:26:03.652+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:26:03.692+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:26:03.681+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:26:03.692+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:26:03.759+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.128 seconds
+[2025-05-27T20:26:33.990+0000] {processor.py:157} INFO - Started process (PID=177) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:26:33.991+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:26:33.992+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:26:33.992+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:26:34.009+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:26:34.007+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:26:34.009+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:26:34.029+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.043 seconds
+[2025-05-27T20:27:04.496+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:27:04.498+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:27:04.502+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:27:04.500+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:27:04.531+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:27:04.527+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:27:04.533+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:27:04.592+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.119 seconds
+[2025-05-27T20:27:34.826+0000] {processor.py:157} INFO - Started process (PID=187) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:27:34.827+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:27:34.828+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:27:34.828+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:27:34.844+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:27:34.840+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:27:34.844+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:27:34.877+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.059 seconds
+[2025-05-27T20:28:05.323+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:28:05.324+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:28:05.326+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:28:05.325+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:28:05.342+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:28:05.339+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:28:05.343+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:28:05.371+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.054 seconds
+[2025-05-27T20:28:35.719+0000] {processor.py:157} INFO - Started process (PID=197) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:28:35.720+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:28:35.720+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:28:35.720+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:28:35.735+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:28:35.733+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:28:35.735+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:28:35.753+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.038 seconds
+[2025-05-27T20:29:06.061+0000] {processor.py:157} INFO - Started process (PID=202) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:29:06.062+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:29:06.063+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:29:06.062+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:29:06.076+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:29:06.074+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:29:06.076+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:29:06.093+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.037 seconds
+[2025-05-27T20:29:36.444+0000] {processor.py:157} INFO - Started process (PID=207) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:29:36.444+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:29:36.445+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:29:36.445+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:29:36.471+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:29:36.465+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:29:36.471+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:29:36.527+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.090 seconds
+[2025-05-27T20:30:22.569+0000] {processor.py:157} INFO - Started process (PID=167) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:30:22.576+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:30:22.577+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:30:22.577+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:30:22.599+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:30:22.595+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:30:22.599+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:30:22.611+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.046 seconds
+[2025-05-27T20:30:52.978+0000] {processor.py:157} INFO - Started process (PID=172) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:30:52.978+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:30:52.979+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:30:52.979+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:30:52.993+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:30:52.989+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:30:52.993+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:30:53.020+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.050 seconds
+[2025-05-27T20:31:23.364+0000] {processor.py:157} INFO - Started process (PID=177) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:31:23.365+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:31:23.366+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:31:23.365+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:31:23.384+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:31:23.380+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:31:23.384+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:31:23.419+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.062 seconds
+[2025-05-27T20:31:53.817+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:31:53.818+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:31:53.819+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:31:53.819+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:31:53.834+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:31:53.833+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:31:53.834+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:31:53.856+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.044 seconds
+[2025-05-27T20:32:11.109+0000] {processor.py:157} INFO - Started process (PID=187) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:32:11.110+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:32:11.111+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:32:11.110+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:32:11.125+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:32:11.123+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:32:11.125+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:32:11.148+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.045 seconds
+[2025-05-27T20:32:41.572+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:32:41.575+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:32:41.580+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:32:41.578+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:32:41.600+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:32:41.598+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:32:41.600+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:32:41.625+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.062 seconds
+[2025-05-27T20:33:16.594+0000] {processor.py:157} INFO - Started process (PID=166) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:33:16.595+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:33:16.596+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:33:16.596+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:33:16.610+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:33:16.606+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:33:16.610+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:33:16.622+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.030 seconds
+[2025-05-27T20:33:47.147+0000] {processor.py:157} INFO - Started process (PID=172) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:33:47.158+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:33:47.160+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:33:47.158+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:33:47.244+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:33:47.234+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:33:47.244+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:33:47.314+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.174 seconds
+[2025-05-27T20:34:17.505+0000] {processor.py:157} INFO - Started process (PID=177) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:34:17.506+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:34:17.507+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:34:17.507+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:34:17.525+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:34:17.522+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:34:17.525+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:34:17.554+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.054 seconds
+[2025-05-27T20:34:47.860+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:34:47.861+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:34:47.862+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:34:47.861+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:34:47.876+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:34:47.873+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:34:47.876+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:34:47.899+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.044 seconds
+[2025-05-27T20:35:18.304+0000] {processor.py:157} INFO - Started process (PID=187) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:35:18.305+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:35:18.306+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:35:18.306+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:35:18.322+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:35:18.315+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:35:18.322+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:35:18.343+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.047 seconds
+[2025-05-27T20:35:48.819+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:35:48.820+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:35:48.821+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:35:48.821+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:35:48.847+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:35:48.843+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:35:48.847+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:35:48.880+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.074 seconds
+[2025-05-27T20:35:55.096+0000] {processor.py:157} INFO - Started process (PID=197) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:35:55.098+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:35:55.101+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:35:55.100+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:35:55.127+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:35:55.125+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:35:55.139+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:35:55.197+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.107 seconds
+[2025-05-27T20:38:29.223+0000] {processor.py:157} INFO - Started process (PID=167) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:38:29.224+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:38:29.226+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:38:29.225+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:38:29.242+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:38:29.237+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:38:29.242+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:38:29.255+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.036 seconds
+[2025-05-27T20:38:39.878+0000] {processor.py:157} INFO - Started process (PID=166) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:38:39.879+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:38:39.880+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:38:39.880+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:38:39.900+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:38:39.894+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:38:39.901+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:38:39.916+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.040 seconds
+[2025-05-27T20:39:10.514+0000] {processor.py:157} INFO - Started process (PID=172) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:39:10.515+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:39:10.516+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:39:10.516+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:39:10.534+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:39:10.530+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:39:10.534+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:39:10.571+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.065 seconds
+[2025-05-27T20:39:41.183+0000] {processor.py:157} INFO - Started process (PID=177) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:39:41.184+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:39:41.185+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:39:41.185+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:39:41.228+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:39:41.219+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:39:41.228+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:39:41.276+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.113 seconds
+[2025-05-27T20:40:11.647+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:40:11.649+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:40:11.651+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:40:11.650+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:40:11.683+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:40:11.668+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:40:11.686+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:40:11.776+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.145 seconds
+[2025-05-27T20:40:42.052+0000] {processor.py:157} INFO - Started process (PID=187) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:40:42.053+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:40:42.054+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:40:42.054+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:40:42.062+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:40:42.060+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:40:42.062+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:40:42.085+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.038 seconds
+[2025-05-27T20:41:12.435+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:41:12.436+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:41:12.437+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:41:12.437+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:41:12.451+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:41:12.449+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:41:12.451+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:41:12.475+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.044 seconds
+[2025-05-27T20:41:42.805+0000] {processor.py:157} INFO - Started process (PID=197) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:41:42.806+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:41:42.806+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:41:42.806+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:41:42.816+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:41:42.814+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:41:42.816+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:41:42.839+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.038 seconds
+[2025-05-27T20:42:13.122+0000] {processor.py:157} INFO - Started process (PID=202) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:42:13.123+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:42:13.124+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:42:13.124+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:42:13.134+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:42:13.132+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:42:13.134+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:42:13.150+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.032 seconds
+[2025-05-27T20:42:43.520+0000] {processor.py:157} INFO - Started process (PID=207) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:42:43.521+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:42:43.522+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:42:43.521+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:42:43.531+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:42:43.529+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:42:43.532+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:42:43.556+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.041 seconds
+[2025-05-27T20:43:13.928+0000] {processor.py:157} INFO - Started process (PID=212) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:43:13.929+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:43:13.930+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:43:13.929+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:43:13.942+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:43:13.937+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:43:13.943+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:43:13.965+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.041 seconds
+[2025-05-27T20:43:44.389+0000] {processor.py:157} INFO - Started process (PID=217) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:43:44.390+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:43:44.391+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:43:44.390+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:43:44.404+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:43:44.402+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:43:44.404+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:43:44.428+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.044 seconds
+[2025-05-27T20:44:24.528+0000] {processor.py:157} INFO - Started process (PID=166) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:44:24.538+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:44:24.541+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:44:24.540+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:44:24.564+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:44:24.562+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:44:24.568+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:44:24.629+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.111 seconds
+[2025-05-27T20:44:54.992+0000] {processor.py:157} INFO - Started process (PID=236) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:44:54.993+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:44:54.994+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:44:54.993+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:44:55.026+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:44:55.019+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:44:55.026+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:44:55.060+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.071 seconds
+[2025-05-27T20:46:22.841+0000] {processor.py:157} INFO - Started process (PID=166) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:46:22.842+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:46:22.844+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:46:22.843+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:46:22.854+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:46:22.852+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:46:22.854+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:46:22.865+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.026 seconds
+[2025-05-27T20:46:53.164+0000] {processor.py:157} INFO - Started process (PID=172) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:46:53.165+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:46:53.166+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:46:53.166+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:46:53.179+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:46:53.176+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:46:53.179+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:46:53.198+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.038 seconds
+[2025-05-27T20:47:23.537+0000] {processor.py:157} INFO - Started process (PID=177) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:47:23.538+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:47:23.538+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:47:23.538+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:47:23.552+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:47:23.549+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:47:23.552+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:47:23.567+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.034 seconds
+[2025-05-27T20:47:53.885+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:47:53.886+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:47:53.887+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:47:53.887+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:47:53.900+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:47:53.898+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:47:53.901+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:47:53.918+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.037 seconds
+[2025-05-27T20:55:25.375+0000] {processor.py:157} INFO - Started process (PID=166) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:55:25.396+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:55:25.406+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:55:25.403+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:55:25.448+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:55:25.444+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:55:25.448+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:55:25.511+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.204 seconds
+[2025-05-27T20:55:56.163+0000] {processor.py:157} INFO - Started process (PID=172) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:55:56.168+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:55:56.171+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:55:56.170+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:55:56.283+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:55:56.279+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:55:56.283+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:55:56.412+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.268 seconds
+[2025-05-27T20:56:26.536+0000] {processor.py:157} INFO - Started process (PID=177) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:56:26.537+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:56:26.539+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:56:26.538+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:56:26.560+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:56:26.558+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:56:26.561+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:56:26.587+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.057 seconds
+[2025-05-27T20:56:56.915+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:56:56.916+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:56:56.916+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:56:56.916+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:56:56.935+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:56:56.932+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:56:56.935+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:56:56.961+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.052 seconds
+[2025-05-27T20:57:27.354+0000] {processor.py:157} INFO - Started process (PID=187) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:57:27.355+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:57:27.356+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:57:27.356+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:57:27.371+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:57:27.367+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:57:27.371+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:57:27.395+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.047 seconds
+[2025-05-27T20:57:57.728+0000] {processor.py:157} INFO - Started process (PID=192) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:57:57.729+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:57:57.730+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:57:57.730+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:57:57.743+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:57:57.740+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:57:57.743+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:57:57.769+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.047 seconds
+[2025-05-27T20:58:28.129+0000] {processor.py:157} INFO - Started process (PID=197) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:58:28.131+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:58:28.132+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:58:28.131+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:58:28.143+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:58:28.140+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:58:28.143+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:58:28.168+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.043 seconds
+[2025-05-27T20:58:58.510+0000] {processor.py:157} INFO - Started process (PID=202) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:58:58.510+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:58:58.511+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:58:58.511+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:58:58.524+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:58:58.522+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:58:58.524+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:58:58.548+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.043 seconds
+[2025-05-27T20:59:28.858+0000] {processor.py:157} INFO - Started process (PID=207) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:59:28.859+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:59:28.860+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:59:28.860+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:59:28.875+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:59:28.872+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:59:28.875+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:59:28.897+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.047 seconds
+[2025-05-27T20:59:59.243+0000] {processor.py:157} INFO - Started process (PID=212) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T20:59:59.243+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T20:59:59.244+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:59:59.244+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:59:59.258+0000] {logging_mixin.py:151} INFO - [2025-05-27T20:59:59.253+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T20:59:59.258+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T20:59:59.280+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.044 seconds
+[2025-05-27T21:00:29.767+0000] {processor.py:157} INFO - Started process (PID=217) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:00:29.768+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:00:29.769+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:00:29.769+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:00:29.786+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:00:29.782+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T21:00:29.786+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:00:29.807+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.054 seconds
+[2025-05-27T21:00:36.913+0000] {processor.py:157} INFO - Started process (PID=222) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:00:36.917+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:00:36.918+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:00:36.918+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:00:36.932+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:00:36.930+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T21:00:36.932+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:00:36.961+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.054 seconds
+[2025-05-27T21:01:11.156+0000] {processor.py:157} INFO - Started process (PID=166) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:01:11.158+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:01:11.158+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:01:11.158+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:01:11.165+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:01:11.163+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T21:01:11.166+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:01:11.178+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.024 seconds
+[2025-05-27T21:01:41.538+0000] {processor.py:157} INFO - Started process (PID=172) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:01:41.539+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:01:41.540+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:01:41.539+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:01:41.552+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:01:41.550+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T21:01:41.553+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:01:41.573+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.047 seconds
+[2025-05-27T21:02:12.110+0000] {processor.py:157} INFO - Started process (PID=177) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:02:12.111+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:02:12.112+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:02:12.112+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:02:12.124+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:02:12.121+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T21:02:12.124+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:02:12.146+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.040 seconds
+[2025-05-27T21:02:42.584+0000] {processor.py:157} INFO - Started process (PID=182) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:02:42.585+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:02:42.586+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:02:42.585+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:02:42.600+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:02:42.598+0000] {dagbag.py:346} ERROR - Failed to import: /opt/airflow/dags/example_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 342, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_dag.py", line 14, in <module>
+    with DAG(dag_id='hello_airflow',
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 589, in __init__
+    self.timetable = create_timetable(schedule_interval, self.timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dag.py", line 224, in create_timetable
+    return CronDataIntervalTimetable(interval, timezone)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/timetables/_cron.py", line 60, in __init__
+    descriptor = ExpressionDescriptor(
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionDescriptor.py", line 76, in __init__
+    self._expression_parts = parser.parse()
+  File "/home/airflow/.local/lib/python3.8/site-packages/cron_descriptor/ExpressionParser.py", line 84, in parse
+    raise FormatException(
+cron_descriptor.Exception.FormatException: Error: Expression only has 1 parts.  At least 5 part are required.
+[2025-05-27T21:02:42.600+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:02:42.635+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.054 seconds
+[2025-05-27T21:02:44.637+0000] {processor.py:157} INFO - Started process (PID=187) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:02:44.638+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:02:44.639+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:02:44.639+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:02:44.689+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:02:45.322+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:02:45.320+0000] {manager.py:499} INFO - Created Permission View: %s
+[2025-05-27T21:02:45.330+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:02:45.330+0000] {manager.py:499} INFO - Created Permission View: %s
+[2025-05-27T21:02:45.333+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:02:45.333+0000] {manager.py:499} INFO - Created Permission View: %s
+[2025-05-27T21:02:45.333+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:02:45.333+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:02:45.357+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:02:45.356+0000] {dag.py:2963} INFO - Creating ORM DAG for hello_airflow
+[2025-05-27T21:02:45.386+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:02:45.386+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:01:00+00:00, run_after=2025-05-27T21:02:00+00:00
+[2025-05-27T21:02:45.415+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.783 seconds
+[2025-05-27T21:03:09.550+0000] {processor.py:157} INFO - Started process (PID=166) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:03:09.552+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:03:09.554+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:03:09.554+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:03:09.566+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:03:09.584+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:03:09.584+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:03:09.598+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:03:09.598+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:02:00+00:00, run_after=2025-05-27T21:03:00+00:00
+[2025-05-27T21:03:09.605+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.057 seconds
+[2025-05-27T21:03:39.998+0000] {processor.py:157} INFO - Started process (PID=174) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:03:39.999+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:03:39.999+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:03:39.999+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:03:40.014+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:03:40.046+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:03:40.045+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:03:40.060+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:03:40.060+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:03:00+00:00, run_after=2025-05-27T21:04:00+00:00
+[2025-05-27T21:03:40.068+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.081 seconds
+[2025-05-27T21:04:10.399+0000] {processor.py:157} INFO - Started process (PID=181) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:04:10.399+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:04:10.400+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:04:10.400+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:04:10.422+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:04:10.452+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:04:10.452+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:04:10.465+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:04:10.465+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:04:00+00:00, run_after=2025-05-27T21:05:00+00:00
+[2025-05-27T21:04:10.475+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.080 seconds
+[2025-05-27T21:04:17.530+0000] {processor.py:157} INFO - Started process (PID=186) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:04:17.531+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:04:17.533+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:04:17.532+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:04:17.565+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:04:17.652+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:04:17.652+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:04:17.663+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:04:17.663+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:04:00+00:00, run_after=2025-05-27T21:05:00+00:00
+[2025-05-27T21:04:17.672+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.154 seconds
+[2025-05-27T21:04:47.986+0000] {processor.py:157} INFO - Started process (PID=191) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:04:47.988+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:04:47.990+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:04:47.989+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:04:48.023+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:04:48.073+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:04:48.073+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:04:48.100+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:04:48.100+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:04:00+00:00, run_after=2025-05-27T21:05:00+00:00
+[2025-05-27T21:04:48.112+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.134 seconds
+[2025-05-27T21:05:18.472+0000] {processor.py:157} INFO - Started process (PID=198) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:05:18.474+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:05:18.479+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:05:18.475+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:05:18.502+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:05:18.538+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:05:18.538+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:05:18.563+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:05:18.563+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:05:00+00:00, run_after=2025-05-27T21:06:00+00:00
+[2025-05-27T21:05:18.572+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.115 seconds
+[2025-05-27T21:05:48.869+0000] {processor.py:157} INFO - Started process (PID=203) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:05:48.871+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:05:48.873+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:05:48.871+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:05:48.901+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:05:48.932+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:05:48.932+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:05:48.952+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:05:48.952+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:05:00+00:00, run_after=2025-05-27T21:06:00+00:00
+[2025-05-27T21:05:48.962+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.096 seconds
+[2025-05-27T21:06:19.265+0000] {processor.py:157} INFO - Started process (PID=210) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:06:19.270+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:06:19.272+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:06:19.271+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:06:19.330+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:06:19.397+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:06:19.396+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:06:19.437+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:06:19.437+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:06:00+00:00, run_after=2025-05-27T21:07:00+00:00
+[2025-05-27T21:06:19.464+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.205 seconds
+[2025-05-27T21:06:49.598+0000] {processor.py:157} INFO - Started process (PID=215) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:06:49.601+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:06:49.603+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:06:49.602+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:06:49.631+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:06:49.663+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:06:49.663+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:06:49.681+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:06:49.681+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:06:00+00:00, run_after=2025-05-27T21:07:00+00:00
+[2025-05-27T21:06:49.690+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.105 seconds
+[2025-05-27T21:07:19.905+0000] {processor.py:157} INFO - Started process (PID=222) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:07:19.912+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:07:19.914+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:07:19.914+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:07:19.934+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:07:19.967+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:07:19.966+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:07:19.989+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:07:19.988+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:07:00+00:00, run_after=2025-05-27T21:08:00+00:00
+[2025-05-27T21:07:19.997+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.100 seconds
+[2025-05-27T21:07:50.305+0000] {processor.py:157} INFO - Started process (PID=227) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:07:50.306+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:07:50.308+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:07:50.307+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:07:50.330+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:07:50.363+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:07:50.363+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:07:50.378+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:07:50.378+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:07:00+00:00, run_after=2025-05-27T21:08:00+00:00
+[2025-05-27T21:07:50.387+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.088 seconds
+[2025-05-27T21:08:20.800+0000] {processor.py:157} INFO - Started process (PID=234) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:08:20.802+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:08:20.803+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:08:20.803+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:08:20.823+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:08:20.854+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:08:20.854+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:08:20.870+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:08:20.870+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:08:00+00:00, run_after=2025-05-27T21:09:00+00:00
+[2025-05-27T21:08:20.879+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.088 seconds
+[2025-05-27T21:08:51.170+0000] {processor.py:157} INFO - Started process (PID=239) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:08:51.171+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:08:51.173+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:08:51.172+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:08:51.201+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:08:51.230+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:08:51.230+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:08:51.256+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:08:51.256+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:08:00+00:00, run_after=2025-05-27T21:09:00+00:00
+[2025-05-27T21:08:51.265+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.102 seconds
+[2025-05-27T21:09:21.693+0000] {processor.py:157} INFO - Started process (PID=246) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:09:21.700+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:09:21.701+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:09:21.701+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:09:21.725+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:09:21.764+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:09:21.764+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:09:21.789+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:09:21.789+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:09:00+00:00, run_after=2025-05-27T21:10:00+00:00
+[2025-05-27T21:09:21.805+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.118 seconds
+[2025-05-27T21:09:52.150+0000] {processor.py:157} INFO - Started process (PID=251) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:09:52.152+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:09:52.153+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:09:52.153+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:09:52.183+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:09:52.218+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:09:52.218+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:09:52.236+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:09:52.236+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:09:00+00:00, run_after=2025-05-27T21:10:00+00:00
+[2025-05-27T21:09:52.244+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.104 seconds
+[2025-05-27T21:10:22.601+0000] {processor.py:157} INFO - Started process (PID=258) to work on /opt/airflow/dags/example_dag.py
+[2025-05-27T21:10:22.602+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/example_dag.py for tasks to queue
+[2025-05-27T21:10:22.603+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:10:22.603+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:10:22.624+0000] {processor.py:839} INFO - DAG(s) dict_keys(['hello_airflow']) retrieved from /opt/airflow/dags/example_dag.py
+[2025-05-27T21:10:22.651+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:10:22.651+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-05-27T21:10:22.665+0000] {logging_mixin.py:151} INFO - [2025-05-27T21:10:22.665+0000] {dag.py:3722} INFO - Setting next_dagrun for hello_airflow to 2025-05-27T21:10:00+00:00, run_after=2025-05-27T21:11:00+00:00
+[2025-05-27T21:10:22.673+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/example_dag.py took 0.078 seconds
