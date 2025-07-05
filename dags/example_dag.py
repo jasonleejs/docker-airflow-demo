@@ -14,7 +14,7 @@ default_args = {
 with DAG(dag_id='hello_airflow',
          default_args=default_args,
          description='A simple hello DAG',
-         schedule_interval='* * * * *',
+         schedule='* * * * *',
          start_date=datetime(2025,1,1),
          catchup=False,
 ) as dag:
